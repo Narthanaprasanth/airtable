@@ -265,6 +265,7 @@ object-fit: cover;
     font-family: bold;
     font-weight: 100;
     justify-content: center;
+
 }
 .links a:last-child{
     margin-top: 10px;
@@ -1077,11 +1078,11 @@ object-fit: cover;
   justify-content: space-between;
 
 }
-.platform svg{
+.platform svg {
   align-items: center;
   display: flex;
   margin: 0;
-  padding: 24px 12px;
+  margin-top: 30px;
 }
 .marketing-down{
   display: flex;
@@ -1147,12 +1148,13 @@ margin-left: 25px;
   border: .1px solid rgb(216, 210, 210);
   opacity: 0.5;
   width: 89%;
-  margin-left: 20px;
+  margin-left: 25px;
 }
 .lower-footer {
   background-color: #f8fafc;
   padding: 20px 0px;
   text-align: center;
+
 }
 .footer-texts{
   align-items: center;
@@ -1653,6 +1655,7 @@ width: 170px;
   flex-direction: row;
   gap: 20px;
   justify-content: start;
+ 
 }
 .marks-col a {
   color: #181d26;
@@ -1688,9 +1691,15 @@ width: 170px;
 }
 .footer-list-container{
   height: 663px;
+  margin-left: 30px;
 }
 .footer-list{
+  gap: 0px;
   height: 0px;
+}
+.footer-list li a{
+  font-size: 0.8rem;
+  font-weight: 100;
 }
 .list-1{
   display: flex;
@@ -1703,6 +1712,12 @@ width: 170px;
   display: flex;
   flex-direction: row;
 }
+.footer-list li{
+  width: 60x;
+}
+.lower-inner{
+  padding-left: 30px;
+}
 .list-1 h2{
   font-size: .84rem;
     letter-spacing: .01em;
@@ -1710,6 +1725,14 @@ width: 170px;
     font-weight: 100;
     text-decoration: none;
     color:#333;
+}
+.footer-extra p{
+  position: relative;
+  top: 10px;
+}
+.footer-extra a{
+  font-size: 0.8rem;
+  font-weight: 100;
 }
 .list-1 a{
   width: auto;
@@ -1749,8 +1772,34 @@ width: 170px;
 .above{
   display: none;
 }
+.lower-footer{
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  width: 100%;
+}
+.footer-extra{
+  display: flex;
+  flex-direction: row;
+}
+.footer-extra p{
+  padding-top: 20px;
+  padding-left: 30px;
+}
+.footer-list li a{
+  padding-left: 30px;
+}
 .lower-main{
   height: 109px;
+}
+.footer-extra h3{
+  font-family: bold;
+  padding-top: 27px;
+  padding-left: 15px;
+}
+.google{
+  padding-left: 60px;
+  padding-top: 20px;
 }
 }
 @media screen and (min-width: 1024px){
@@ -2001,9 +2050,9 @@ margin: 24px 0 0;
     width: 368;
     height: 368px;
   }
-  .light-line{
-    width: 370px;
-    margin-left: 0px;
+  .light-line-2{
+    width: 950px;
+    margin-left: 40px;
   }
 .mediaText{
    column-gap: 69px;
@@ -2193,7 +2242,8 @@ margin: 24px 0 0;
   .platform{
     width: fit-content;
     height: 74px;
-    margin-left: 190px;
+    padding-left: 70px;
+    padding: 10px 57px;
   }
    .marketing-col {
     display: flex;
@@ -2205,12 +2255,22 @@ margin: 24px 0 0;
     width: 544px;
     margin-right: 120px;
   }
+  
   .platform-inside {
   width: 100%;
   height: 68px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.social-media{
+  gap: 25px;
+}
+.logos{
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+  padding-left: 10px;
 }
 .marketing-col {
     display: flex;
@@ -2228,14 +2288,33 @@ margin: 24px 0 0;
   }
   .footer-texts{
     display: flex;
-    flex-direction: row;
-    width: 600px;
-    height: 77px;
-    margin-left: 40px;
+  flex-wrap: nowrap;
+  gap: 16px;
+  justify-content: center;
   }
+ 
   .footer-extra a{
     width: max-content;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 45px;
+    bottom: 40px;
   }
+  .footer-extra{
+    display: flex;
+    flex-direction: column;
+  }
+ .footer-extra h3{
+  position: relative;
+  right: 150px;
+  font-family: bold;
+  bottom: 30px;
+ }
+ .google{
+  right: 700px;
+ }
   .lower-main{
     margin-top: 72px;
     height: 109px;
@@ -2270,10 +2349,21 @@ margin: 24px 0 0;
   text-decoration: none;
   color: #181D26;
 }
+.lower-footer{
+  height: 200px;
+}
 .sec-part-2 {
     display: flex;
     flex-direction: column;
   }
+  .footer-extra {
+    display: flex;
+    align-items: start;
+  }
+.footer-texts{
+display:flex ;
+align-items: start;
+}
 }
 @media screen and (min-width: 1440px) {
     .promocard p{
@@ -2293,7 +2383,6 @@ margin: 24px 0 0;
       text-align: center;
     }
     .reg{
-      margin-top: 5px;
       margin-left: 50px;
     }
     .marks-up{
@@ -2531,18 +2620,32 @@ margin: 24px 0 0;
     .platform-inside{
       display: flex;
       position: relative;
-      right: 200px;
+      right: 0px;
     }
-    .social-media{
-      position: relative;
-      left: 200px;
-    }
+     .social-media {
+    position: relative;
+    left: 370;
+    gap: 35px;
+  }
     .light-line-2{
       width: 1360px;
     }
     .footer-list-container{
       width: 100%;
       gap: 50px;
+    }
+    .footer-extra{
+      margin: 0px;
+      padding: 0px;
+      height: 0px;
+    }
+    .footer-extra h3{
+      padding-top: 68px;
+    }
+    .logos{
+      bottom: 50px;
+      position: relative;
+      right: 250px;
     }
     .list-1{
       width: 280px;
@@ -2552,20 +2655,28 @@ margin: 24px 0 0;
       background-color: #f8fafc;
       display: flex;
       flex-direction: row;
+      height: 73px;
     }
-    .footer-extra{
+    .footer-extra p{
       display: flex;
       flex-direction: row;
       position: relative;
-      right: 30px;
-      top: 10px;
-  
+      right: 25px;
+      top: 6px;
+      height: 73px;
+  }
+  .footer-extra h3{
+    position: relative;
+    bottom: 125px;
+    left: 190px;
+    height: 73px;
   }
   .lower-footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+    height: 73px;
+    width: 100%;
   }
   .google{
     position: relative;
@@ -2576,14 +2687,6 @@ margin: 24px 0 0;
     height: 73px;
     position: relative;
     top: 70px;
-  }
-  .footer-texts{
-    padding: 10px;
-    gap: 18px;
-    height: 20px;
-    position: relative;
-    bottom: 20px;
-    
   }
   .footer-list li a{
     font-size: 0.84rem;
@@ -2850,8 +2953,9 @@ margin: 24px 0 0;
      .platform{
       display: flex;
       justify-content: space-around;
-      padding-right: 50px;
       gap: 10px;
+     padding-left: 130px;
+      
      }
      .footer-container{
       width: 100%;
@@ -2864,6 +2968,9 @@ margin: 24px 0 0;
       position: relative;
       left: 140px;
       width: 1510px;
+     }
+     .links-2 a{
+      font-size: 1.2rem;
      }
      .footer-list{
      padding-left: 200px;
@@ -2890,6 +2997,7 @@ margin: 24px 0 0;
     .lower-main{
       height: 73px;
       display: flex;
+      flex-direction: row;
     }
     .footer-extra{
       font-weight: 100;
@@ -2901,11 +3009,34 @@ margin: 24px 0 0;
       position: relative;
       right: 35px;
       top: 5px;
+      width: 100%;
     }
     .footer-texts{
       gap: 19px;
+      width: 100%;
+    }
+    .footer-list{
+      width: 100%;
     }
     .footer-list{
       gap: 10px;
+    }
+    .footer-extra{
+      display: flex;
+      flex-direction: row;
+    }
+    .footer-extra h3{
+      position: relative;
+      bottom: 45px;
+      left: 10px;
+    }
+    .footer-extra p{
+      left: 30px;
+    }
+    .google{
+      padding-left: 0px;
+    }
+    .vedio-txt{
+      padding-right: 300px;
     }
   }
